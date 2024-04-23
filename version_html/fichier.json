@@ -136,7 +136,7 @@
   "libelle": "Tagliatelles au saumon",
   "description": "Découvrez notre recette délicieuse de tagliatelles au saumon frais et à la crème qui qui vous assure un véritable régal!",
   "prix": 12,
-  "image": "/images_the_district/food/tagliatelles-saumon.webp",
+  "image": "/images_the_district/food/tagliatelles_saumon.webp",
   "id_categorie": 10,
   "active": "Yes"
  }

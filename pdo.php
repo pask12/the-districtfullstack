@@ -22,4 +22,18 @@ function get_categories($conn) {
     return $categories;
 }
 
+function get_plats($conn) {
+  $requete = $conn->query("SELECT * FROM plat");
+  $plats = $requete->fetchAll(PDO::FETCH_OBJ);
+  $requete->closeCursor();
+  return $plats;
+}
+
+function get_plats_categorie($conn, $id_categorie) {
+  $requete = $conn->prepare("SELECT * FROM plat WHERE id_categorie = :id");
+  $requete->bindParam(":id", $id_categorie, PDO::PARAM_INT);
+  $requete->execute();
+  $plats = $requete->fetchAll(PDO::FETCH_OBJ);
+  return $plats;
+}
 ?>

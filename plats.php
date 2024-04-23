@@ -1,16 +1,47 @@
 <?php
 include('header.php');
+
+require('pdo.php');
 ?>
 
+<section>
   <h1 class="title-page mt-5">Le meilleur du fast food</h1>
-  <section>
       <div class="container-fluid mt-5">
-        <div class="col row justify-content-center">
+        <div class="row justify-content-center">
 
 
+         
+          <!-- <div  id="plat" class="col-md-10 p-0 d-flex row justify-content-center"> -->
+          <?php
+        $connexion = connect();
+        $plats = get_plats($connexion);
+        $index = 0;
+        $newline = false;
+        foreach ($plats as $plat) {
+          $index++;
+          if ($newline) {
+            echo '<div class="row justify-content-center">';
+            $newline = false;
+        }
+        echo  '<div class="col-3 p-0 d-flex justify-content-center ms-5 mb-5">';
+        echo '<div class="card mb-3">';
+        echo '<h1 class="card-title">' . $plat->libelle . '</h1>';
+        echo '<img src="images_the_district/food/' . $plat->image . '" class="card-img-top" alt="Placeholder Image" style="height : 25rem; width : 30rem;">';
+        echo '<div class="card-body">';
+        echo '<p class="card-text">' . $plat->description . '</p>'; 
+        echo '<div class="text-center">';
+        echo '<a href="#" class="envoi btn btn-primary">Commander</a>';
 
-          <div  id="plat" class="col-md-10 p-0 d-flex row justify-content-center">
+        echo '</div></div></div></div>';
+        if ( $index % 3 == 0) {
+          echo '</div>';
+          $newline = true;
+        }
+      }
 
+      ?>
+    </div>
+  </div>
         
     
 
