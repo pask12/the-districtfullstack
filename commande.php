@@ -1,37 +1,37 @@
 <?php
 include('header.php');
-?>
-  <!-- <div class="img position-relative">
-        <img src="images_the_district/bg.jpg" alt="images_the_district">
-        <h1 class="position-absolute top-50 ">Le meilleur du fast food</h1>
-      </div> -->
 
-  <h1 class="text-page text-center mt-5">Le meilleur du fast food</h1>
-  <div class="container-fluid p-0 mt-5 d-flex justify-content-center">
-    <div class="col-md-3 mx-2 mb-4 d-flex justify-content-center">
-      <div id="plat_commande">
+require('pdo.php');
+?>
+      <h1 class="title-page mt-5">Le meilleur du fast food</h1>
+      <section>
+          <div class="container-fluid mt-5">
+            <div class="col row justify-content-center">
+            <?php
+        $conn = connect();
+        $plat = get_plat($conn, $_GET['id']);
+        // var_dump($plat);
+        // die();
+        echo '<div class="row justify-content-center">';
+        echo  '<div class="col-3 p-0 d-flex mb-5">';
+        echo '<div class="card mb-3 w-5">';
+        echo '<div class="card-body">';        
+        echo '<h5 class="card-title">' . $plat->libelle . '</h5>';
+        echo '<img src="images_the_district/food/' . $plat->image . '" class="card-img-top" alt="Placeholder Image" style="height : 25rem; width : 28rem;">';
+        echo '<p class="card-text">' . $plat->description . '</p>'; 
+        echo '<div class="text-center">';
+        echo '<p class="card-text">' . $plat->prix . " €" . '</p>';
         
-      </div>
-      <!-- <div class="card text" style="width: 20rem"> -->
-        <!-- <img src="images_the_district/menu-burger.jpg" class="card-img-top" alt="Placeholder Image" height="300rem">
-        <div class="card-body">
-          <h5 class="card-title">HAMBURGER</h5>
-          <p class="card-text mb-2">Burger composé d'un bun's du boulanger, deux steaks de 80g (origine française), de
-            deux tranches poitrine de porc fumée, de deux tranches cheddar affiné, salade et oignons confits</p>
-          <div class="d-flex justify-content-center mb-4">
-            <button type="button" class="envoi btn btn-primary mt-3">Commander</button>
-          </div>
-        </div> -->
-      </div>
-    </div>
-  </div>
+        echo '</div></div></div></div>';
+    
+      ?>
   <section>
-    <div class="container-fluid p-5 mt-5">
+    <div class="container-fluid p-0 mt-5">
       <div class="col row justify-content-center">
 
 
         <div class="d-flex justify-content-center mt-5">
-          <form  action="#" method="POST" id="formulaire">
+          <form action="#" method="POST" id="formulaire">
             <div class="row d-inline-flex p-2">
               <div class="col">
                 <label for="inputAddress">Nom</label>
@@ -77,9 +77,9 @@ include('header.php');
           </form>
         </div>
   </section>
-  
-</body>
-<!-- Remove the container if you want to extend the Footer to full width. -->
+
+
+
 <?php
 include('footer.php');
 ?>

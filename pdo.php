@@ -36,4 +36,14 @@ function get_plats_categorie($conn, $id_categorie) {
   $plats = $requete->fetchAll(PDO::FETCH_OBJ);
   return $plats;
 }
+
+
+function get_plat($conn, $id) {
+  $requete = $conn->prepare("SELECT * FROM plat WHERE id = :id_plat");
+  $requete->bindParam(":id_plat", $id, PDO::PARAM_INT);
+  $requete->execute();
+  $plat = $requete->fetch(PDO::FETCH_OBJ);
+  return $plat;
+}
+
 ?>

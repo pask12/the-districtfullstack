@@ -15,6 +15,8 @@ require('pdo.php');
           <?php
         $connexion = connect();
         $plats = get_plats($connexion);
+        // var_dump($plats);
+        // die();
         $index = 0;
         $newline = false;
         foreach ($plats as $plat) {
@@ -30,7 +32,7 @@ require('pdo.php');
         echo '<div class="card-body">';
         echo '<p class="card-text">' . $plat->description . '</p>'; 
         echo '<div class="text-center">';
-        echo '<a href="#" class="envoi btn btn-primary">Commander</a>';
+        echo '<a href="commande.php?id=' . $plat->id . '" class="envoi btn btn-primary">Commander</a>';
 
         echo '</div></div></div></div>';
         if ( $index % 3 == 0) {

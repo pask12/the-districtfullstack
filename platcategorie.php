@@ -26,7 +26,7 @@ require('pdo.php');
         echo '<img src="images_the_district/food/' . $plat->image . '" class="card-img-top" alt="Placeholder Image" style="height : 25rem; width : 28rem;">';
         echo '<p class="card-text">' . $plat->description . '</p>'; 
         echo '<div class="text-center">';
-        echo '<a href="#" class="envoi btn btn-primary ">Commander</a>';
+        echo '<a href="commande.php?id=' . $plat->id . '" class="envoi btn btn-primary">Commander</a>';
         
         echo '</div></div></div></div>';
     
