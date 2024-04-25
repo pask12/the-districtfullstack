@@ -1,4 +1,4 @@
-<div class=" my-0 ">
+<div class=" my-0 p-0">
 
 <footer class="text-center text-lg-start" style="background-color: #c6c9c0;">
   <div class="container d-flex justify-content-center py-4">

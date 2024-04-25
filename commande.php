@@ -12,7 +12,7 @@ require('pdo.php');
         $plat = get_plat($conn, $_GET['id']);
         // var_dump($plat);
         // die();
-        echo '<div class="row justify-content-center">';
+        echo '<div class="row justify-content-center p-0">';
         echo  '<div class="col-3 p-0 d-flex mb-5">';
         echo '<div class="card mb-3 w-5">';
         echo '<div class="card-body">';        

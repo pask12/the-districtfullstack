@@ -12,7 +12,7 @@ $.get('fichier.json', function (data) {
     plat.forEach(plat => {
   
         let element = document.createElement('div'); 
-        element.className = "col-10  d-flex justify-content-center mx-auto "
+        element.className = "col-10  "
 
         let cardcategorie = document.createElement('div');
         cardcategorie.className = "card ";
