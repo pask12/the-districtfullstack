@@ -1,7 +1,7 @@
 <?php
 include('header.php');
 ?>
-
+<div class="parallax" style="background-image: url('image_parallax/pngegg.png')">
   <h1 class="text-page text-center mt-5">Le meilleur du fast food</h1>
      
      
@@ -53,6 +53,8 @@ include('header.php');
 </div>
    </section> -->
 
+   
+
    <section>
     <div class="container-fluid p-0 mt-5">
       <div class="col row justify-content-center">
@@ -103,6 +105,7 @@ include('header.php');
               </div>
             </div>
           </form>
+        </div>
         </div>
 
 <!-- Remove the container if you want to extend the Footer to full width. -->

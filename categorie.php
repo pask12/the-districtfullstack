@@ -1,12 +1,21 @@
 <?php
-include('header.php');
 
 require('pdo.php');
+
+include('header.php');
+
 ?>
-<section>
-  <h1 class="title-page mt-5 mb-5">Le meilleur du fast food</h1>
-  <div class="container-fluid">
-    <div class="row justify-content-center">
+
+
+<!-- <div class="parallax" style="background-image: url('image_parallax/pngegg.png')"> -->
+
+  <section>
+
+    <h1 class="title-page mt-5 mb-5">Le meilleur du fast food</h1>
+
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
       <?php
         $connexion = connect();
         $categories = get_categories($connexion);
@@ -35,14 +44,13 @@ require('pdo.php');
       }
       ?>
     </div>
-  </div>
+
+<!-- </div> -->
+
 </section>
-  
 
 
 
- <?php
- include('footer.php');
- ?>
+<?php include('footer.php');?>
  
       

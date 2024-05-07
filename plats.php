@@ -4,6 +4,9 @@ include('header.php');
 require('pdo.php');
 ?>
 
+
+<div class="parallax" style="background-image: url('image_parallax/pngegg.png')">
+
 <section>
   <h1 class="title-page mt-5">Le meilleur du fast food</h1>
       <div class="container-fluid mt-5">
@@ -43,7 +46,8 @@ require('pdo.php');
 
       ?>
     </div>
-  </div>
+  
+    </div>
         
     
 
