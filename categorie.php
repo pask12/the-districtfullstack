@@ -8,12 +8,11 @@ include('header.php');
 
 
 <!-- <div class="parallax" style="background-image: url('image_parallax/pngegg.png')"> -->
-
+<h1 class="title-page mt-5 mb-5 mx-5">Le meilleur du fast food</h1>
   <section>
 
-    <h1 class="title-page mt-5 mb-5">Le meilleur du fast food</h1>
 
-    <div class="container-fluid">
+    <div class="container-fluid mt-5">
 
       <div class="row justify-content-center">
       <?php
@@ -30,7 +29,8 @@ include('header.php');
         echo  '<div class="col-3 p-0 d-flex justify-content-center ms-5 mb-5">';
         echo '<div class="card mb-3 ">';
         echo '<h1 class="card-title">' . $categorie->libelle . '</h1>';
-        echo '<a href="platcategorie.php?id=' . $categorie->id .'"><img src="asset/img/category/' . $categorie->image . '" class="card-img-top" alt="Placeholder Image" style="height : 25rem; width : 25rem;"></a>';
+        echo '<a href="platcategorie.php?id=' . $categorie->id .'">';
+        echo '<img src="asset/img/category/' . $categorie->image . '" class="card-img-top" alt="Placeholder Image" style="height : 25rem; width : 25rem;"></a>';
         echo '<div class="card-body">';
         
         

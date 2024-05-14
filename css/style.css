@@ -9,7 +9,7 @@ html{
     background-color:rgb(15, 15, 15);
 }
 
-/* page accueil*/
+/* page accueil
 .accueil{
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ html{
     position:relative ;
     z-index: 0;
 
-}
+} */
 
 
 .envoi{
@@ -36,22 +36,24 @@ html{
  body{
     background-color: #47B4D1;
 
-
  }
+
 .parallax{
+    position: absolute;
+    background-image: url('../image_parallax/pngegg5.png');
     background-position: center ;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 800px;
-   
-    
-    }
+    /* min-height: 800px; */
+    height: 150%;
+}
 
 
 
  .title-page {
-    text-align: center;
+    text-align: left;
+    /* margin-top: 5%; */
     
     
 
@@ -60,14 +62,16 @@ html{
 
 
 
- .position-absolute {
+ /* .position-absolute {
     top: 26%;
     left: 60%;
- }
+    
+    
+ } */
 
  .search {
    
-    top: 30%;
+    top: 15%;
     left: 40%;
     width: 20rem;
     position : absolute;

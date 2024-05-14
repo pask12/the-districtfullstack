@@ -4,11 +4,11 @@ include('header.php');
 require('pdo.php');
 ?>
 
-
-<div class="parallax" style="background-image: url('image_parallax/pngegg.png')">
+<!-- <div class="parallax" style="background-image: url('image_parallax/pngegg.png')"></div> -->
+<div class="parallax"></div>
 
 <section>
-  <h1 class="title-page mt-5">Le meilleur du fast food</h1>
+  <h1 class="title-page mt-5 mx-5">Le meilleur du fast food</h1>
       <div class="container-fluid mt-5">
         <div class="row justify-content-center">
 
@@ -57,7 +57,7 @@ require('pdo.php');
         <div class="card-body">
           <h5 class="card-title">HAMBURGER</h5>
           <p class="card-text mb-2">Burger composé d'un bun's du boulanger, deux steaks de 80g (origine française), de deux tranches poitrine de porc fumée, de deux tranches cheddar affiné, salade et oignons confits</p>
-          <div class="d-flex justify-content-center mb-4">
+          <div class="d-flex justify-content-center mb-4<br>">
             <button type="button" class="envoi btn btn-primary mt-3">Commander</button>
           </div>
         </div>
@@ -246,7 +246,9 @@ require('pdo.php');
 
 
 
-</section>    
+</section>
+<div class="parallax"></div>
+
 <!-- Remove the container if you want to extend the Footer to full width. -->
 <?php
  include('footer.php');

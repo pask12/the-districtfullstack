@@ -46,4 +46,12 @@ function get_plat($conn, $id) {
   return $plat;
 }
 
+function get_platsvendus($conn){
+  $requete = $conn->query("SELECT * FROM plat JOIN commande on commande.id_plat = plat.id ORDER BY commande.quantite DESC LIMIT 3");
+  $plats = $requete->fetchAll(PDO::FETCH_OBJ);
+  $requete->closeCursor();
+  return $plats;
+}
+
+
 ?>
