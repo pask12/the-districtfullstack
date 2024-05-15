@@ -2,7 +2,7 @@
 include('header.php');
 ?>
 <div class="parallax" style="background-image: url('image_parallax/pngegg.png')">
-  <h1 class="text-page mt-5 mx-5">Le meilleur du fast food</h1>
+  <h1 class="text-page  mx-5">Le meilleur du fast food</h1>
      
      
   <!-- <section>

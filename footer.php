@@ -1,7 +1,7 @@
 
 
-<footer class="text-center text-lg-start  " style="background-color: #c6c9c0;">
-<!-- fixed-bottom -->
+<footer class="text-center text-lg-start fixed-bottom  " style="background-color: #c6c9c0;">
+
   <div class=" d-flex justify-content-center py-4">
 
     <ul class="icons d-flex">
@@ -74,7 +74,6 @@
 
 <script src="asset/js/jqueryjson.js"></script>
 
-
+</div>
 </body>
-<div class="parallax"></div>
 </html>

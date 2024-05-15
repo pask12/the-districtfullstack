@@ -8,13 +8,13 @@ include('header.php');
 
 
 <!-- <div class="parallax" style="background-image: url('image_parallax/pngegg.png')"> -->
-<h1 class="title-page mt-5 mb-5 mx-5">Le meilleur du fast food</h1>
+<h1 class="title-page mt-5 mx-5 mb-5 ">Le meilleur du fast food</h1>
   <section>
 
 
     <div class="container-fluid mt-5">
 
-      <div class="row justify-content-center">
+      <div class="row justify-content-center ">
       <?php
         $connexion = connect();
         $categories = get_categories($connexion);
@@ -23,7 +23,7 @@ include('header.php');
         foreach ($categories as $categorie) {
           $index++;
           if ($newline) {
-            echo '<div class="row justify-content-center">';
+            echo '<div class="row justify-content-center card-custom">';
             $newline = false;
         }
         echo  '<div class="col-3 p-0 d-flex justify-content-center ms-5 mb-5">';

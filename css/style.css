@@ -39,14 +39,17 @@ html{
  }
 
 .parallax{
-    position: absolute;
-    background-image: url('../image_parallax/pngegg5.png');
+   position: absolute;
+   top:176px;
+   min-width: 100%;
+   min-height: 800px;
+    background-image: url('../image_parallax/pngegg.png');
     background-position: center ;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
     /* min-height: 800px; */
-    height: 150%;
 }
 
 
@@ -106,13 +109,16 @@ html{
 
 
 video{
-   width : 60%;
-   height : 60%;
+   width : 50%;
+   height : 50%;
    justify-content:  center;
    position : relative;
 
    /* object-fit: cover; */
 }
 
+/* pour la marge en bas de page */
 
-
+.card-custom{
+   margin-bottom: 5%;
+}

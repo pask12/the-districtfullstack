@@ -25,7 +25,7 @@ require('pdo.php');
         foreach ($plats as $plat) {
           $index++;
           if ($newline) {
-            echo '<div class="row justify-content-center">';
+            echo '<div class="row justify-content-center card-custom">';
             $newline = false;
         }
         echo  '<div class="col-3 p-0 d-flex justify-content-center ms-5 mb-5">';
