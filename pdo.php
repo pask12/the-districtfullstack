@@ -54,4 +54,12 @@ function get_platsvendus($conn){
 }
 
 
+function get_recherche($conn, $motcle){
+  $requete = $conn->prepare('SELECT * FROM plat WHERE libelle LIKE :motcle');
+  // $requete->bindParam(":motcle", $motcle);
+  $requete->execute(array(':motcle' => '%' . $motcle . '%'));
+  $plats = $requete->fetchAll(PDO::FETCH_OBJ);
+  return $plats;
+
+}
 ?>
