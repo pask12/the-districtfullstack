@@ -3,13 +3,15 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $nomContact = $_POST["nomContact"];
+    $prenomContact = $_POST["prenomContact"];
+    $emailContact = $_POST["emailContact"];
     $phoneContact = $_POST["phoneContact"];
-    $demandeContact = $_POST["demandeContact"];
+    $adressContact = $_POST["adressContact"];
 
     $timestamp = date("D-m-y-H-i-s");
     
 
-    $contenu = "Nom: $nomContact / Téléphone: $phoneContact / Demande: $demandeContact /";
+    $contenu = "Nom: $nomContact / Prenom: $prenomContact / Email: $emailContact / Téléphone: $phoneContact / Adresse: $adressContact /";
 $nom_fichier = "$timestamp.txt";
     file_put_contents($nom_fichier, $contenu, FILE_APPEND);
 

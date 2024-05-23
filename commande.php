@@ -24,6 +24,7 @@ require('pdo.php');
         echo '<div class="text-center">';
         echo '<p class="card-text">' . $plat->prix . " €" . '</p>';
         
+        
         echo '</div></div></div></div>';
     
       ?>
@@ -33,11 +34,11 @@ require('pdo.php');
 
 
         <div class="d-flex justify-content-center mt-5">
-          <form action="#" method="POST" id="formulaire">
+          <form action="mail.php" method="POST" id="formulaire">
             <div class="row d-inline-flex p-2">
               <div class="col">
                 <label for="inputAddress">Nom</label>
-                <input type="text" class="form-control" placeholder="Nom" id="nom">
+                <input type="text" class="form-control" placeholder="Nom" id="nom" name="nomCommande">
                 <!-- <div id="nomChamp" class="form-text text-danger">
                   Ce champ est obligatoire. -->
                   <p id="erreur1" style="color: red;"></p>
@@ -45,7 +46,7 @@ require('pdo.php');
               <!-- </div> -->
               <div class="col">
                 <label for="inputAddress">Prénom</label>
-                <input type="text" class="form-control" placeholder="Prénom" id="prenom">
+                <input type="text" class="form-control" placeholder="Prénom" id="prenom" name="prenomCommande">
                 <p id="erreur2" style="color: red;"></p>
               </div>
             </div>
@@ -53,12 +54,12 @@ require('pdo.php');
             <div class="row d-inline-flex p-2">
               <div class="col">
                 <label for="inputAddress">Email</label>
-                <input type="text" class="form-control" placeholder="Email" id="email">
+                <input type="text" class="form-control" placeholder="Email" id="email" name="emailCommande">
                 <p id="erreur3" style="color: red;"></p>
               </div>
               <div class="col">
                 <label for="inputAddress">Téléphone</label>
-                <input type="text" class="form-control" placeholder="Téléphone" id="telephone">
+                <input type="text" class="form-control" placeholder="Téléphone" id="telephone" name="phoneCommande">
                 <p id="erreur4" style="color: red;"></p>
                 <!-- <div id="nomChamp" class="form-text text-danger">
                   Ce champ est obligatoire.
@@ -69,7 +70,7 @@ require('pdo.php');
             <div class="row">
               <div class="form-group">
                 <label for="exampleFormControlTextarea1">Votre adresse</label>
-                <textarea class="form-control" id="adresse" rows="3"></textarea>
+                <textarea class="form-control" id="adresse" name="adressCommande" rows="3"></textarea>
                 <p id="erreur5" style="color: red;"></p>
               </div>
               <div class="d-flex justify-content-center">
