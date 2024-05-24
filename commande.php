@@ -23,7 +23,10 @@ require('pdo.php');
         echo '<p class="card-text">' . $plat->description . '</p>'; 
         echo '<div class="text-center">';
         echo '<p class="card-text">' . $plat->prix . " €" . '</p>';
-        
+        echo '<p>Quantité :</p> <input id="number"  name="number" type="number" value="1" min="1" max="50" />';
+        echo '<input id="prix" value="' . $plat->prix . '" hidden>'; 
+        echo '<br><br>';
+        echo '<p id="total">Total :</p> ';
         
         echo '</div></div></div></div>';
     
@@ -82,7 +85,7 @@ require('pdo.php');
         </div>
   </section>
 
-
+<script src="asset/js/utils.js"></script>
 
 <?php
 include('footer.php');
