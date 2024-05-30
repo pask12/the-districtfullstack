@@ -19,10 +19,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $emailCommande = $_POST["emailCommande"];
     $phoneCommande = $_POST["phoneCommande"];
     $adressCommande = $_POST["adressCommande"];
+    $libelle = $_POST["libelle"];
+    $prixUnitaire = $_POST["prix_unitaire"];
+    $quantite = $_POST["quantite"];
+    $total = $_POST["total"];
+
 
     $timestamp = date("D-m-y-H-i-s");
     
-    $contenu = "Nom: $nomCommande / Prenom: $prenomCommande / Email: $emailCommande / Téléphone: $phoneCommande / Adresse: $adressCommande /";
+    $contenu = <<< CMD
+    Merci $nomCommande $prenomCommande
+    Email: $emailCommande
+    Téléphone: $phoneCommande
+    Adresse: $adressCommande
+
+    Votre commande:
+    libelle : $libelle 
+    prix: $prixUnitaire 
+    quantite: $quantite 
+    total: $total
+    CMD;
+    
     $nom_fichier = "$timestamp.txt";
     file_put_contents($nom_fichier, $contenu, FILE_APPEND);
 

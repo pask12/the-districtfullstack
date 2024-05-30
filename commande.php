@@ -22,11 +22,12 @@ require('pdo.php');
         echo '<img src="images_the_district/food/' . $plat->image . '" class="card-img-top" alt="Placeholder Image" style="height : 25rem; width : 28rem;">';
         echo '<p class="card-text">' . $plat->description . '</p>'; 
         echo '<div class="text-center">';
-        echo '<p class="card-text">' . $plat->prix . " €" . '</p>';
+        echo '<p class="card-text">' . $plat->prix . ' €</p>';
         echo '<p>Quantité :</p> <input id="number"  name="number" type="number" value="1" min="1" max="50" />';
         echo '<input id="prix" value="' . $plat->prix . '" hidden>'; 
         echo '<br><br>';
-        echo '<p id="total">Total :</p> ';
+        echo '<p id="totalChamp">Total : ' . $plat->prix . ' €</p> ';
+      
         
         echo '</div></div></div></div>';
     
@@ -34,10 +35,13 @@ require('pdo.php');
   <section>
     <div class="container-fluid p-0 mt-5">
       <div class="col row justify-content-center">
-
-
         <div class="d-flex justify-content-center mt-5">
           <form action="mail.php" method="POST" id="formulaire">
+          <input type="text" name="libelle" value=" <?= $plat->libelle ?>" hidden> 
+           <input type="text" name="prix_unitaire" value=" <?= $plat->prix ?>" hidden>
+           <input type="text" id="quantite" name="quantite" value="1" hidden>
+           <input type="text" name="total" id="total" value=" <?= $plat->prix ?>" hidden>
+
             <div class="row d-inline-flex p-2">
               <div class="col">
                 <label for="inputAddress">Nom</label>

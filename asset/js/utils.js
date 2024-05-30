@@ -2,6 +2,15 @@ document.getElementById("number").addEventListener("change", update_quantite);
 
 function update_quantite(e) {
     prix = parseInt(document.getElementById("prix").value);
-    total = document.getElementById("total");
-    total.innerText = "Total : " + (e.target.value * prix).toFixed(2) + " €";
+    totalChamp = document.getElementById("totalChamp");
+    totalValue = (e.target.value * prix).toFixed(2)
+
+    document.getElementById("quantite").value = e.target.value;
+    
+    totalChamp.innerText = "Total : " + totalValue + " €";
+    totalForm = document.getElementById("total");
+    totalForm.value = totalValue;
+    
+
 }
+
