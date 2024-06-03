@@ -35,13 +35,12 @@ require('pdo.php');
               
             </div>
           </div>
-          </div>
+          
 </section>
     <!-- <div id="plat_categorie"class="col-md-12 p-0 d-flex justify-content-center">
     
     </div> -->
-
-
-    <?php
-include('footer.php');
+<?php
+include_once('footer.php');
 ?>
+

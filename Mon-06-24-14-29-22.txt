@@ -1,0 +1,10 @@
+Merci  
+Email: 
+Téléphone: 
+Adresse: 
+
+Votre commande:
+libelle :  Pizza Bianca 
+prix:  14.00 
+quantite: 1 
+total:  14.00

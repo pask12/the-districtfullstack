@@ -1,8 +1,8 @@
 <?php
 include('header.php');
 ?>
-<div class="parallax" style="background-image: url('image_parallax/pngegg.png')">
-  <h1 class="text-page  mx-5">Le meilleur du fast food</h1>
+<!-- <div class="parallax" style="background-image: url('image_parallax/pngegg.png')"> -->
+  <h1 class="text-page  mt-5 mx-5 mb-5">Le meilleur du fast food</h1>
      
      
   <!-- <section>

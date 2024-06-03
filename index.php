@@ -87,11 +87,11 @@ require('pdo.php');
         echo '<div class="col-3 p-0 d-flex justify-content-center ms-5 mb-5">';
         echo '<div class="card mb-3">';
         echo '<h1 class="card-title">' . $plat->libelle . '</h1>';
-        echo '<img src="images_the_district/food/' . $plat->image . '" class="card-img-top" alt="Placeholder Image" style="height : 20rem; width : 30rem;">';
+        echo '<img src="images_the_district/food/' . $plat->image . '" class="card-img-top" alt="Placeholder Image" style="height : 20rem;">';
         echo '<div class="card-body">';
         echo '<p class="card-text">' . $plat->description . '</p>'; 
         echo '<div class="text-center">';
-        echo '<a href="commande.php?id=' . $plat->id_plat . '" class="envoi btn btn-primary">Commander</a>';
+        echo '<a href="commande.php?id=' . $plat->id . '" class="envoi btn btn-primary">Commander</a>';
 
         echo '</div></div></div></div>';
         if ( $index % 3 == 0) {

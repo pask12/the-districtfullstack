@@ -43,13 +43,13 @@ html{
    top:176px;
    min-width: 100%;
    min-height: 800px;
-    background-image: url('../image_parallax/pngegg.png');
+    background-image: url('../images_the_district/ibg.jpg');
     background-position: center ;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    /* min-height: 800px; */
+    
 }
 
 
@@ -121,4 +121,18 @@ video{
 
 .card-custom{
    margin-bottom: 5%;
+}
+
+/* politique confidentialité et mention légale */
+
+.link{
+   text-decoration: none;
+   list-style: none;
+   font-weight: bold;
+   color: black;
+   font-size: 20px;
+}
+
+.link:hover{
+   color: white;
 }

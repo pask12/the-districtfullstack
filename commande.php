@@ -3,10 +3,10 @@ include('header.php');
 
 require('pdo.php');
 ?>
-<div class="parallax" style="background-image: url('image_parallax/pngegg.png')">
 
-      <h1 class="title-page mx-5 ">Le meilleur du fast food</h1>
-      <section>
+
+      <h1 class="title-page mt-5 mx-5 mb-5">Le meilleur du fast food</h1>
+      <main>
           <div class="container-fluid mt-5">
             <div class="col row justify-content-center card-custom">
             <?php
@@ -14,7 +14,7 @@ require('pdo.php');
         $plat = get_plat($conn, $_GET['id']);
         // var_dump($plat);
         // die();
-        echo '<div class="row justify-content-center p-0">';
+        echo '<div class="row justify-content-center p-0 m-0">';
         echo  '<div class="col-3 p-0 d-flex mb-5">';
         echo '<div class="card mb-3 w-5">';
         echo '<div class="card-body">';        
@@ -32,9 +32,10 @@ require('pdo.php');
         echo '</div></div></div></div>';
     
       ?>
+  </main>
   <section>
     <div class="container-fluid p-0 mt-5">
-      <div class="col row justify-content-center">
+      <div class=" row justify-content-center m-0">
         <div class="d-flex justify-content-center mt-5">
           <form action="mail.php" method="POST" id="formulaire">
           <input type="text" name="libelle" value=" <?= $plat->libelle ?>" hidden> 
@@ -87,8 +88,8 @@ require('pdo.php');
           </form>
         </div>
         </div>
-  </section>
-
+</div>
+</section>
 <script src="asset/js/utils.js"></script>
 
 <?php

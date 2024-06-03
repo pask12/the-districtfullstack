@@ -5,7 +5,6 @@ require('pdo.php');
 ?>
 
 <!-- <div class="parallax" style="background-image: url('image_parallax/pngegg.png')"></div> -->
-<div class="parallax"></div>
 
 <section>
   <h1 class="title-page mt-5 mx-5">Le meilleur du fast food</h1>
@@ -247,7 +246,7 @@ require('pdo.php');
 
 
 </section>
-<div class="parallax"></div>
+
 
 <!-- Remove the container if you want to extend the Footer to full width. -->
 <?php
