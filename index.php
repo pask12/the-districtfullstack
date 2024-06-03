@@ -10,7 +10,7 @@ require('pdo.php');
 
 
 <h1 class="title-page mt-5 mb-5 mx-5">Le meilleur du fast food</h1>
-<section class="container-fluid col-12">
+<section class="video-search">
   <div class="d-flex justify-content-center ">
     <video  id="video" src="video/5794437-hd_1920_1080_25fps.mp4" autoplay loop muted> </video>
   </div>
@@ -84,14 +84,15 @@ require('pdo.php');
             echo '<div class="row justify-content-center">';
             $newline = false;
         }
-        echo '<div class="col-3 p-0 d-flex justify-content-center ms-5 mb-5">';
+        // echo '<div class="col-3 p-0 d-flex justify-content-center ms-5 mb-5">';
+        echo  '<div class="card col-10 col-md-5 col-lg-3 p-0 mx-3 mt-4">';
         echo '<div class="card mb-3">';
         echo '<h1 class="card-title">' . $plat->libelle . '</h1>';
-        echo '<img src="images_the_district/food/' . $plat->image . '" class="card-img-top" alt="Placeholder Image" style="height : 20rem;">';
+        echo '<img src="images_the_district/food/' . $plat->image . '" class="card-img-top img-card" alt="Placeholder Image">';
         echo '<div class="card-body">';
         echo '<p class="card-text">' . $plat->description . '</p>'; 
         echo '<div class="text-center">';
-        echo '<a href="commande.php?id=' . $plat->id . '" class="envoi btn btn-primary">Commander</a>';
+        echo '<a href="commande.php?id=' . $plat->id_plat . '" class="envoi btn btn-primary">Commander</a>';
 
         echo '</div></div></div></div>';
         if ( $index % 3 == 0) {

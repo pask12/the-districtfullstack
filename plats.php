@@ -27,10 +27,11 @@ require('pdo.php');
             echo '<div class="row justify-content-center card-custom">';
             $newline = false;
         }
-        echo  '<div class="col-3 p-0 d-flex justify-content-center ms-5 mb-5">';
+        // echo  '<div class="col-3 p-0 d-flex justify-content-center ms-5 mb-5">';
+        echo  '<div class="card col-10 col-md-5 col-lg-3 p-0 mx-3 mt-4">';
         echo '<div class="card mb-3">';
         echo '<h1 class="card-title">' . $plat->libelle . '</h1>';
-        echo '<img src="images_the_district/food/' . $plat->image . '" class="card-img-top" alt="Placeholder Image" style="height : 25rem; width : 30rem;">';
+        echo '<img src="images_the_district/food/' . $plat->image . '" class="card-img-top img-card" alt="Placeholder Image">';
         echo '<div class="card-body">';
         echo '<p class="card-text">' . $plat->description . '</p>'; 
         echo '<div class="text-center">';

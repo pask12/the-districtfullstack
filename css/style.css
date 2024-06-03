@@ -80,6 +80,7 @@ html{
     position : absolute;
     justify-content: center;
     
+    
  } 
 
 
@@ -135,4 +136,9 @@ video{
 
 .link:hover{
    color: white;
+}
+
+.img-card{
+   max-height: 250px;
+   object-fit: cover;
 }

@@ -7,7 +7,7 @@ require('pdo.php');
 
       <h1 class="title-page mt-5 mx-5 mb-5">Le meilleur du fast food</h1>
       <main>
-          <div class="container-fluid mt-5">
+          <div class="container-fluid ">
             <div class="col row justify-content-center card-custom">
             <?php
         $conn = connect();
@@ -15,28 +15,29 @@ require('pdo.php');
         // var_dump($plat);
         // die();
         echo '<div class="row justify-content-center p-0 m-0">';
-        echo  '<div class="col-3 p-0 d-flex mb-5">';
-        echo '<div class="card mb-3 w-5">';
+      
+        echo  '<div class="card col-10 col-md-5 col-lg-3 p-0 mx-3 mt-4">';
+
         echo '<div class="card-body">';        
         echo '<h5 class="card-title">' . $plat->libelle . '</h5>';
-        echo '<img src="images_the_district/food/' . $plat->image . '" class="card-img-top" alt="Placeholder Image" style="height : 25rem; width : 28rem;">';
+        echo '<img src="images_the_district/food/' . $plat->image . '" class="card-img-top img-card" alt="Placeholder Image">';
         echo '<p class="card-text">' . $plat->description . '</p>'; 
         echo '<div class="text-center">';
         echo '<p class="card-text">' . $plat->prix . ' €</p>';
-        echo '<p>Quantité :</p> <input id="number"  name="number" type="number" value="1" min="1" max="50" />';
+        echo '<p>Quantité :</p> <input class="col-6"id="number"  name="number" type="number" value="1" min="1" max="50" />';
         echo '<input id="prix" value="' . $plat->prix . '" hidden>'; 
         echo '<br><br>';
         echo '<p id="totalChamp">Total : ' . $plat->prix . ' €</p> ';
       
         
-        echo '</div></div></div></div>';
+        echo '</div></div></div>';
     
       ?>
   </main>
   <section>
-    <div class="container-fluid p-0 mt-5">
+    <div class="container-fluid p-0 mt-2">
       <div class=" row justify-content-center m-0">
-        <div class="d-flex justify-content-center mt-5">
+        <div class="d-flex justify-content-center mb-5">
           <form action="mail.php" method="POST" id="formulaire">
           <input type="text" name="libelle" value=" <?= $plat->libelle ?>" hidden> 
            <input type="text" name="prix_unitaire" value=" <?= $plat->prix ?>" hidden>

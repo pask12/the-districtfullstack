@@ -26,17 +26,14 @@ include('header.php');
             echo '<div class="row justify-content-center card-custom">';
             $newline = false;
         }
-        echo  '<div class="col-3 p-0 d-flex justify-content-center ms-5 mb-5">';
+        // echo  '<div class=" p-0 d-flex justify-content-center ms-5 mb-5">';
+        echo  '<div class="card col-10 col-md-5 col-lg-3 p-0 mx-3 mt-4">';
         echo '<div class="card mb-3 ">';
         echo '<h1 class="card-title">' . $categorie->libelle . '</h1>';
         echo '<a href="platcategorie.php?id=' . $categorie->id .'">';
-        echo '<img src="asset/img/category/' . $categorie->image . '" class="card-img-top" alt="Placeholder Image" style="height : 25rem; width : 25rem;"></a>';
-        echo '<div class="card-body">';
+        echo '<img src="asset/img/category/' . $categorie->image . '" class="card-img-top img-card" alt="Placeholder Image" ></a>';
         
-        
-       
-
-        echo '</div></div></div>';
+        echo '</div></div>';
         if ( $index % 3 == 0) {
           echo '</div>';
           $newline = true;
