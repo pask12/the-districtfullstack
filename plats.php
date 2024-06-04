@@ -24,12 +24,12 @@ require('pdo.php');
         foreach ($plats as $plat) {
           $index++;
           if ($newline) {
-            echo '<div class="row justify-content-center card-custom">';
+            echo '<div class="row justify-content-center ">';
             $newline = false;
         }
         // echo  '<div class="col-3 p-0 d-flex justify-content-center ms-5 mb-5">';
-        echo  '<div class="card col-10 col-md-5 col-lg-3 p-0 mx-3 mt-4">';
-        echo '<div class="card mb-3">';
+        echo  '<div class="card col-10 col-md-5 col-lg-3 p-0 mx-3 mt-5 mb-5">';
+        echo '<div class="mb-3">';
         echo '<h1 class="card-title">' . $plat->libelle . '</h1>';
         echo '<img src="images_the_district/food/' . $plat->image . '" class="card-img-top img-card" alt="Placeholder Image">';
         echo '<div class="card-body">';

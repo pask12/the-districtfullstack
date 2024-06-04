@@ -2,7 +2,7 @@
     <?php
      include ("header.php");
     ?>
-      <section class="mx-3 my-3 mt-5">
+      <section class="mx-3 my-3 mt-5 mb-5">
        <div>
         <h1>Mentions légales</h1>
             <div>
@@ -26,7 +26,7 @@
             
             <h3>Hébergeur du site</h3>
             <h4>OMG</h4>
-            <p>SAS au capital de MILLE MILLIARD D'euros</p>
+            <p>SAS au capital d'1 000 000</p>
             <p>Siège social :</p>
             <p>7 impasse laland, 59100 NOGENT LE ROTROU</p>
             <p>Tél : 0002021007</p>

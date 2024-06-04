@@ -73,7 +73,7 @@ html{
  } */
 
  .search {
-   
+    display: flex;
     top: 15%;
     left: 40%;
     width: 20rem;
@@ -91,7 +91,7 @@ html{
 }
 
  .card:hover{
-    transform:scale(1.15);
+    transform:scale(1.10);
  }
 
 /* formulaire contact */
@@ -120,9 +120,10 @@ video{
 
 /* pour la marge en bas de page */
 
-.card-custom{
+/* .card-custom{
    margin-bottom: 5%;
-}
+   margin-top: 5%;
+} */
 
 /* politique confidentialité et mention légale */
 
@@ -141,4 +142,11 @@ video{
 .img-card{
    max-height: 250px;
    object-fit: cover;
+}
+
+@media (min-width: 375px) {
+  .search {
+    display: flex;
+    align-items: inherit;
+ } 
 }
