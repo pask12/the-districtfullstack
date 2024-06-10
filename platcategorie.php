@@ -20,7 +20,7 @@ require('pdo.php');
             $newline = false;
         }
         // echo  '<div class="col-3 p-0 d-flex justify-content-center ms-5 mb-5">';
-        echo  '<div class="card col-10 col-md-5 col-lg-3 p-0 mx-3 mt-4">';
+        echo  '<div class="card col-10 col-md-5 col-lg-3 p-0 mx-3 mt-4 mb-5">';
         echo '<div class="mb-3 w-5">';
         echo '<div class="card-body">';        
         echo '<h5 class="card-title">' . $plat->libelle . '</h5>';

@@ -27,7 +27,7 @@ include('header.php');
             $newline = false;
         }
         // echo  '<div class=" p-0 d-flex justify-content-center ms-5 mb-5">';
-        echo  '<div class="card col-10 col-md-5 col-lg-3 p-0 mx-3 mt-4">';
+        echo  '<div class="card col-10 col-md-5 col-lg-3 p-0 mx-3 mt-4 mb-5">';
         echo '<div class="mb-3 ">';
         echo '<h1 class="card-title">' . $categorie->libelle . '</h1>';
         echo '<a href="platcategorie.php?id=' . $categorie->id .'">';

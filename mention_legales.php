@@ -8,29 +8,29 @@
             <div>
             <br>
             <h3>Société éditrice du site</h3>
-            <h4>PASCAL</h4>
-            <p>SAS au capital de 3 000 000 000 euros</p>
-            <p>RCS Scranton n° 666 777 888 9999</p>
-            <p>N° TVA : FR 44444444</p>
-            <p>Code NAF : 77777</p>
+            <h4>LES NOVATEURS</h4>
+            <p>SAS au capital de 30 600 euros</p>
+            <p>RCS Nanterre n° 828 758 607 00018</p>
+            <p>N° TVA : FR 60 828758607</p>
+            <p>Code NAF : 4791A</p>
             
             
             <h4>Siège social :</h4>
-            <p>AMIENS</p>
-            <p>Tél :</p>
-            <p>Mail : contact@DDMFLN.com</p>
+            <p>240 avenue d'Argenteuil,92600 Asnières sur Seine</p>
+            <p>Tél : 06 20 16 30 84</p>
+            <p>Mail : contact@lesnovateurs.com</p>
             
-            <h4>Directeur de publication</h4>
-            <p>Kelly KAPOUR</p>
-            <p>Mail : best-K@district.fr</p>
+            <h3>Directeur de publication</h3>
+            <p>Alexandre BOUGEROL</p>
+            <p>Mail : alex@e-resto.fr</p>
             
             <h3>Hébergeur du site</h3>
-            <h4>OMG</h4>
-            <p>SAS au capital d'1 000 000</p>
+            <h4>OVH</h4>
+            <p>SAS au capital de 10.069.020 euros</p>
             <p>Siège social :</p>
-            <p>7 impasse laland, 59100 NOGENT LE ROTROU</p>
-            <p>Tél : 0002021007</p>
-            <p>Mail : contact@omg.com</p>
+            <p>2 rue Kellermann, 59100 Roubaix</p>
+            <p>Tél : 1007</p>
+            <p>Mail : contact@ovh.com</p>
            
             </div>
        </div>
